@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# PDF files (not needed in repo)
+*.pdf
+
+# Text extraction file
+requirements.txt
