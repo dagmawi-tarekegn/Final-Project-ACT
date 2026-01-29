@@ -22,7 +22,12 @@ body {
 }
 
 /* --- Typography --- */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 1rem;
     color: #1a1a2e;
 }
@@ -373,4 +378,159 @@ footer p {
 
 footer p:last-child {
     margin-bottom: 0;
+}
+
+/* --- Mobile Navigation Toggle --- */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* --- Responsive Design --- */
+
+/* Tablet Breakpoint */
+@media (max-width: 992px) {
+
+    .features-grid,
+    .courses-grid,
+    .offerings-grid,
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+
+    /* Header & Navigation */
+    header {
+        padding: 1rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 0.75rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Main Content */
+    main {
+        padding: 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Grid Layouts - Stack on Mobile */
+    .features-grid,
+    .courses-grid,
+    .offerings-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Cards */
+    .feature-card,
+    .course-card,
+    .offering-card,
+    .info-card {
+        padding: 1.5rem;
+    }
+
+    /* About Page */
+    .about-hero {
+        padding: 2rem 1rem;
+    }
+
+    .founder-info {
+        padding: 1.5rem;
+    }
+
+    /* Contact Page */
+    .contact-hero {
+        padding: 2rem 1rem;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.25rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
 }
