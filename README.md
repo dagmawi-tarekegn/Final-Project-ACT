@@ -1,6 +1,6 @@
 # CodeMentor - Coding Tutorial Landing Page
 
-A responsive landing page for CodeMentor, a fictional coding tutorial service. Built with vanilla HTML, CSS, and JavaScript.
+A responsive landing page for CodeMentor, a coding tutorial service. Built with HTML, CSS, and JavaScript.
 
 ## 📋 Project Description
 
