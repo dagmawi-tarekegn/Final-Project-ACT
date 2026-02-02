@@ -305,7 +305,24 @@ section {
 }
 
 .contact-form {
+    flex: 1;
     max-width: 600px;
+}
+
+.contact-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.contact-image {
+    flex: 1;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -532,6 +549,15 @@ footer p:last-child {
 
     .contact-form {
         max-width: 100%;
+    }
+
+    /* Contact Page - Stack on Mobile */
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-image {
+        order: -1;
     }
 
     /* Footer */
